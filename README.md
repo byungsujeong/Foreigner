@@ -1,7 +1,7 @@
 # Foreigner
 
 # Summary
-Information such as foreign residence information by Seoul area (old district), trend of inbound foreigners by country, exchange rate information, etc. web page.
+Information such as foreign residence by Seoul area (old district), trend of inbound foreigners by country, exchange rate, etc. web page.
 
 # Languages
 * Python
@@ -31,13 +31,13 @@ Information such as foreign residence information by Seoul area (old district), 
 * Requests
 
 # Features
-* Utilize the Kakao map API for selecting regions on the main page
+* Utilize Kakao map API for selecting regions on the main page
 * Implement crawling function for providing exchange rate information
-* Use google pie chart to provide foreign residents' information by region
-* Visualize the data using pandas DataFrame and matplotlib
+* Use google pie chart to provide information of foreign residents by region
+* Visualize the data using DataFrame from Pandas and Matplotlib library
 
 # Trade-off decisions
-At the time of the initial design, we were going to use the fbprophet library to include the prediction of trend of inbound foreigners by country. I had a hard time installing this library in version 3.7 of Python. So I had to use the results of the analysis through the jupyter lab as an image.
+At the time of the initial design, we planed to use the fbprophet library to include the prediction of trend of inbound foreigners by country. I had a hard time installing this library in version 3.7 of Python. Therefore, I had to use the results of the analysis through the jupyter lab as an image.
 
 # Challenges
-In order to retrieve currency exchange rate information disclosed by KEB Hana Bank in real time, I had to crawl data from the web page. I needed to understand libraries like 'beautiful soup', 'requests'. Also, i needed to understand dom tree structure for getting attributes needed to be crawled.
+In order to collect exchange rate disclosed by KEB Hana Bank in real time, I had to crawl data from the web page. I needed to understand libraries like 'beautiful soup', 'requests'. Also, i had to analyze DOM tree structure for getting attributes from HTML source.
