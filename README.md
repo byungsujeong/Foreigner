@@ -38,7 +38,7 @@ Information such as foreign residence by Seoul area, trend of inbound foreigners
 * Visualize the data using DataFrame from Pandas and Matplotlib library
 
 # Trade-off decisions
-At the time of the initial design, we planed to use the fbprophet library to include the prediction of trend of inbound foreigners by country. I had a hard time installing this library in version 3.7 of Python. Therefore, I had to use the results of the analysis through the jupyter lab as an image.
+At the time of the initial design, we planned to use the fbprophet library to include the prediction of trend of inbound foreigners by country. I had a hard time installing this library in version 3.7 of Python. Therefore, I had to use the results of the analysis through the jupyter lab as an image.
 
 # Challenges
-In order to collect exchange rate disclosed by KEB Hana Bank in real time, I had to crawl data from the web page. I needed to understand libraries like 'beautiful soup', 'requests'. Also, i had to analyze DOM tree structure for getting attributes from HTML source.
+In order to collect exchange rate disclosed by KEB Hana Bank in real time, I had to crawl data from the web page. I needed to understand libraries like 'beautiful soup', 'requests'. Also, I had to analyze DOM tree structure for getting attributes from HTML source.
